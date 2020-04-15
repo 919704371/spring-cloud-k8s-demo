@@ -19,7 +19,7 @@
 
     <properties>
         <!--Docker Container Image Prefix -->
-        <docker.image.prefix>ryanjbaxter</docker.image.prefix>
+        <docker.image.prefix>gao</docker.image.prefix>
         <docker-maven-plugin.version>0.31.0</docker-maven-plugin.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -185,4 +185,14 @@
         </repository>
     </repositories>
 
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <url>http://nexus.tsingj.local/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>http://nexus.tsingj.local/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
