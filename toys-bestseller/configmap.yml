@@ -4,3 +4,4 @@ metadata:
   name: toys-bestseller
 data:
   chaos.monkey.enabled: "false"
+  toys.bestseller.customer.config: "customer config"
